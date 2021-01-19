@@ -1,7 +1,5 @@
-def solution():
-	ans = sum(x for x in range(1000) if (x % 3 == 0 or x % 5 == 0))
-	return str(ans)
+def compute(n):
+    ans= sum(x for x in range(n) if x % 3 == 0 or x % 5 == 0 )
+    return ans
 
-
-if __name__ == "__main__":
-	print(solution())
+print(compute(1000))
